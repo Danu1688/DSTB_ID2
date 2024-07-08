@@ -701,42 +701,42 @@ proxies:
     path: /trojan-ws
     headers:
       Host: nusa1.dstb.cloud
-- name: ASvrNS1_XCL-Vidio_SNI-1
+- name: ASvrNS1_XCL-Vidio_H-1
   type: trojan
-  server: nusa1.dstb.cloud
+  server: static-web.prod.vidiocdn.com
   port: 443
   password: d96a8c6c-4675-4edc-9033-225571a7f595
   udp: true
-  sni: static-web.prod.vidiocdn.com
+  sni: nusa1.dstb.cloud
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
     headers:
-      Host: static-web.prod.vidiocdn.com
-- name: ASvrNS1_XCL-Vidio_SNI-2
+      Host: nusa1.dstb.cloud
+- name: ASvrNS1_XCL-Vidio_H-2
   type: trojan
-  server: nusa1.dstb.cloud
+  server: static-quiz.prod.vidiocdn.com
   port: 443
   password: d96a8c6c-4675-4edc-9033-225571a7f595
   udp: true
-  sni: static-quiz.prod.vidiocdn.com
+  sni: nusa1.dstb.cloud
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
     headers:
-      Host: static-quiz.prod.vidiocdn.com
-- name: ASvrNS1_XCL-Vidio_SNI-3
+      Host: nusa1.dstb.cloud
+- name: ASvrNS1_XCL-Vidio_H-3
   type: trojan
-  server: nusa1.dstb.cloud
+  server: static-playback.prod.vidiocdn.com
   port: 443
   password: d96a8c6c-4675-4edc-9033-225571a7f595
   udp: true
-  sni: static-playback.prod.vidiocdn.com
+  sni: nusa1.dstb.cloud
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /trojan-ws
     headers:
-      Host: static-playback.prod.vidiocdn.com
+      Host: nusa1.dstb.cloud
