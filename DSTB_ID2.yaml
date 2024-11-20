@@ -1,4 +1,30 @@
 proxies:
+- name: ASvrNS2_TJ-xcv-Bolak1
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: cba51c3f-80fb-4306-a41a-4a7a255b5b1e
+  udp: true
+  sni: nusa2.dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: nusa2.dstb.cloud
+- name: ASvrNS2_TJ-xcv-Bolak2
+  type: trojan
+  server: 172.67.73.39
+  port: 443
+  password: cba51c3f-80fb-4306-a41a-4a7a255b5b1e
+  udp: true
+  sni: nusa2.dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: nusa2.dstb.cloud
 - name: ASvrNS2_XCV-WILLCARD
   type: trojan
   server: support.zoom.us
@@ -38,32 +64,6 @@ proxies:
     path: /trojan-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ASvrNS2_TJ-xcv-Bolak1
-  type: trojan
-  server: 172.67.73.39
-  port: 443
-  password: cba51c3f-80fb-4306-a41a-4a7a255b5b1e
-  udp: true
-  sni: nusa2.dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: nusa2.dstb.cloud
-- name: ASvrNS2_TJ-xcv-Bolak2
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: cba51c3f-80fb-4306-a41a-4a7a255b5b1e
-  udp: true
-  sni: nusa2.dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: nusa2.dstb.cloud
 - name: ASvrNS2_BIZ_SNI_SSL
   type: trojan
   server: nusa2.dstb.cloud
@@ -77,19 +77,6 @@ proxies:
     path: /trojan-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ASvrNS2_BIZ-Edu_IP1
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: cba51c3f-80fb-4306-a41a-4a7a255b5b1e
-  udp: true
-  sni: nusa2.dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: nusa2.dstb.cloud
 - name: ASvrNS2_XCL-VIDIO_Pointing1
   type: trojan
   server: quiz.int.vidio.com
@@ -402,7 +389,33 @@ proxies:
     path: /trojan-ws
     headers:
       Host: nusa2.dstb.cloud
-- name: BSvrNS1_XCV-WILLCARD
+- name: ASvrNS1_TJ-xcv-Bolak1
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: d96a8c6c-4675-4edc-9033-225571a7f595
+  udp: true
+  sni: nusa1.dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: nusa1.dstb.cloud
+- name: ASvrNS1_TJ-xcv-Bolak2
+  type: trojan
+  server: 172.67.73.39
+  port: 443
+  password: d96a8c6c-4675-4edc-9033-225571a7f595
+  udp: true
+  sni: nusa1.dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: nusa1.dstb.cloud
+- name: ASvrNS1_XCV-WILLCARD
   type: trojan
   server: support.zoom.us
   port: 443
@@ -428,7 +441,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: nusa1.dstb.cloud
-- name: BSvrNS1_TJ-xcv-sni
+- name: ASvrNS1_TJ-xcv-sni
   type: trojan
   server: nusa1.dstb.cloud
   port: 443
@@ -441,32 +454,6 @@ proxies:
     path: /trojan-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: BSvrNS1_TJ-xcv-Bolak1
-  type: trojan
-  server: 172.67.73.39
-  port: 443
-  password: d96a8c6c-4675-4edc-9033-225571a7f595
-  udp: true
-  sni: nusa1.dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: nusa1.dstb.cloud
-- name: BSvrNS1_TJ-xcv-Bolak2
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: d96a8c6c-4675-4edc-9033-225571a7f595
-  udp: true
-  sni: nusa1.dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: nusa1.dstb.cloud
 - name: ASvrNS1_BIZ_SNI_SSL
   type: trojan
   server: nusa1.dstb.cloud
@@ -480,19 +467,6 @@ proxies:
     path: /trojan-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ASvrNS1_BIZ-Edu_IP1
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: d96a8c6c-4675-4edc-9033-225571a7f595
-  udp: true
-  sni: nusa1.dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: nusa1.dstb.cloud
 - name: ASvrNS1_XCL-VIDIO_Pointing1
   type: trojan
   server: quiz.int.vidio.com
@@ -805,6 +779,32 @@ proxies:
     path: /trojan-ws
     headers:
       Host: nusa1.dstb.cloud
+- name: ASvrDO1_TJ-xcv-Bolak1
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: ab3b5db8-4cbb-4136-8f55-44752f27134a
+  udp: true
+  sni: dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: dstb.cloud
+- name: ASvrDO1_TJ-xcv-Bolak2
+  type: trojan
+  server: 172.67.73.39
+  port: 443
+  password: ab3b5db8-4cbb-4136-8f55-44752f27134a
+  udp: true
+  sni: dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: dstb.cloud
 - name: ASvrDO1_XCV-WILLCARD
   type: trojan
   server: support.zoom.us
@@ -844,32 +844,6 @@ proxies:
     path: /trojan
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ASvrDO1_TJ-xcv-Bolak1
-  type: trojan
-  server: 172.67.73.39
-  port: 443
-  password: ab3b5db8-4cbb-4136-8f55-44752f27134a
-  udp: true
-  sni: dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: dstb.cloud
-- name: ASvrDO1_TJ-xcv-Bolak2
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: ab3b5db8-4cbb-4136-8f55-44752f27134a
-  udp: true
-  sni: dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: dstb.cloud
 - name: ASvrDO1_BIZ_SNI_SSL
   type: trojan
   server: dstb.cloud
@@ -883,19 +857,6 @@ proxies:
     path: /trojan
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ASvrDO1_BIZ-Edu_IP1
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: ab3b5db8-4cbb-4136-8f55-44752f27134a
-  udp: true
-  sni: dstb.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /trojan
-    headers:
-      Host: dstb.cloud
 - name: ASvrDO1_XCL-VIDIO_Pointing1
   type: trojan
   server: quiz.int.vidio.com
