@@ -71,6 +71,32 @@ proxies:
   udp: true
   sni: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
   skip-cert-verify: true
+- name: ASvrNS2_TJGO_XCV_CDN
+  server: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  port: 8443
+  type: trojan
+  password: svrnusa2_tjgo
+  network: ws
+  sni: nusa2.dstb.cloud
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-go
+    headers:
+        Host: nusa2.dstb.cloud
+- name: ASvrNS2_TJGO_XCV_SNI
+  server: nusa2.dstb.cloud
+  port: 8443
+  type: trojan
+  password: svrnusa2_tjgo
+  network: ws
+  sni: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-go
+    headers:
+        Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
 - name: ASvrHowdy_XCV-SNI
   type: trojan
   server: sg3.socifiles.com
