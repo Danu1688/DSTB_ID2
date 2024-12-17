@@ -619,6 +619,14 @@ proxies:
     path: /vless-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: AsvrNS1_TJTCP_XCV_SNI
+  type: trojan
+  server: nusa1.dstb.cloud
+  port: 443
+  password: 92a69f65-61ab-4950-94ba-56f1f58ab8b6
+  udp: true
+  sni: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  skip-cert-verify: true
 - name: ASvrNS1_TJ-xcv-Bolak1
   type: trojan
   server: 104.17.3.81
