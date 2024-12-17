@@ -1,4 +1,68 @@
 proxies:
+- name: ASvrNusa2_TLS_XCV-SNI
+  type: vmess
+  server: nusa2.dstb.cloud
+  port: 443
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: ASvrNusa2_TLS_VIDIO-SNI
+  type: vmess
+  server: nusa2.dstb.cloud
+  port: 443
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: quiz.int.vidio.com
+- name: ASvrNusa2_NTLS_XCV-SNI
+  type: vmess
+  server: nusa2.dstb.cloud
+  port: 80
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: ASvrNusa2_NTLS_VIDIO-SNI
+  type: vmess
+  server: nusa2.dstb.cloud
+  port: 80
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: quiz.int.vidio.com
 - name: ASvrHowdy_XCV-SNI
   type: trojan
   server: sg3.socifiles.com
