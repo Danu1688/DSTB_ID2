@@ -63,6 +63,14 @@ proxies:
     path: /vmess-ws
     headers:
       Host: quiz.int.vidio.com
+- name: AsvrNS2_TJTCP_XCV_SNI
+  type: trojan
+  server: nusa2.dstb.cloud
+  port: 443
+  password: b00a8880-9e0b-4595-9894-76c011637d97
+  udp: true
+  sni: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  skip-cert-verify: true
 - name: ASvrHowdy_XCV-SNI
   type: trojan
   server: sg3.socifiles.com
