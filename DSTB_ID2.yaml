@@ -1,5 +1,5 @@
 proxies:
-- name: ASvrNusa2_TLS_XCV-SNI
+- name: ASvrNS2_TLS_XCV-SNI
   type: vmess
   server: nusa2.dstb.cloud
   port: 443
@@ -15,7 +15,7 @@ proxies:
     path: /vmess-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ASvrNusa2_TLS_VIDIO-SNI
+- name: ASvrNS2_TLS_VIDIO-SNI
   type: vmess
   server: nusa2.dstb.cloud
   port: 443
@@ -31,7 +31,7 @@ proxies:
     path: /vmess-ws
     headers:
       Host: quiz.int.vidio.com
-- name: ASvrNusa2_NTLS_XCV-SNI
+- name: ASvrNS2_NTLS_XCV-SNI
   type: vmess
   server: nusa2.dstb.cloud
   port: 80
@@ -47,7 +47,7 @@ proxies:
     path: /vmess-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ASvrNusa2_NTLS_VIDIO-SNI
+- name: ASvrNS2_NTLS_VIDIO-SNI
   type: vmess
   server: nusa2.dstb.cloud
   port: 80
@@ -531,6 +531,70 @@ proxies:
     path: /trojan-ws
     headers:
       Host: nusa2.dstb.cloud
+- name: ASvrNS1_TLS_XCV-SNI
+  type: vmess
+  server: nusa1.dstb.cloud
+  port: 443
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: ASvrNS1_TLS_VIDIO-SNI
+  type: vmess
+  server: nusa1.dstb.cloud
+  port: 443
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: quiz.int.vidio.com
+- name: ASvrNS1_NTLS_XCV-SNI
+  type: vmess
+  server: nusa1.dstb.cloud
+  port: 80
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: ASvrNS1_NTLS_VIDIO-SNI
+  type: vmess
+  server: nusa1.dstb.cloud
+  port: 80
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: quiz.int.vidio.com
 - name: ASvrNS1_TJ-xcv-Bolak1
   type: trojan
   server: 104.17.3.81
@@ -947,6 +1011,70 @@ proxies:
     path: /trojan-ws
     headers:
       Host: nusa1.dstb.cloud
+- name: ASvrDo1_TLS_XCV-SNI
+  type: vmess
+  server: dstb.cloud
+  port: 443
+  uuid: 030efcba-ee61-4288-a4b1-afaf11cdcb78
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: ASvrDo1_TLS_VIDIO-SNI
+  type: vmess
+  server: dstb.cloud
+  port: 443
+  uuid: 030efcba-ee61-4288-a4b1-afaf11cdcb78
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: quiz.int.vidio.com
+- name: ASvrDo1_NTLS_XCV-SNI
+  type: vmess
+  server: dstb.cloud
+  port: 80
+  uuid: 030efcba-ee61-4288-a4b1-afaf11cdcb78
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: ASvrDo1_NTLS_VIDIO-SNI
+  type: vmess
+  server: dstb.cloud
+  port: 80
+  uuid: 030efcba-ee61-4288-a4b1-afaf11cdcb78
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: quiz.int.vidio.com
 - name: ASvrDO1_TJ-xcv-Bolak1
   type: trojan
   server: 104.17.3.81
