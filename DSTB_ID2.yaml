@@ -1,21 +1,5 @@
 proxies:
-- name: AVmessNS2_TLS_XCV_WC
-  type: vmess
-  server: support.zoom.us
-  port: 443
-  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: zoomgov.dstb.my.id
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: id2.dstb.my.id
-- name: AVmessNS2_TLS_XCV_CDN
+- name: A_VmsNS2_TLS_XCV_CDN
   type: vmess
   server: 104.17.3.81
   port: 443
@@ -31,75 +15,11 @@ proxies:
     path: /vmess-ws
     headers:
       Host: id2.dstb.my.id
-- name: AVmessNS2_TLS_XCV_SNI
+- name: A_VmsNS2_TLS_XCV_WC
   type: vmess
-  server: id2.dstb.my.id
-  port: 443
-  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: AVmessNS2_TLS_VIDIO_SNI
-  type: vmess
-  server: id2.dstb.my.id
-  port: 443
-  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: quiz.int.vidio.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: quiz.int.vidio.com
-- name: AVmessNS2_NTLS_XCV_SNI
-  type: vmess
-  server: id2.dstb.my.id
-  port: 80
-  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: false
-  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: AVmessNS2_NTLS_VIDIO_SNI
-  type: vmess
-  server: id2.dstb.my.id
-  port: 80
-  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: false
-  servername: quiz.int.vidio.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: quiz.int.vidio.com
-- name: AVlessNS2_TLS_XCV_WC
-  type: vless
   server: support.zoom.us
   port: 443
-  uuid: 1c823364-d8a4-43ba-a773-e2289c9a3a92
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
   alterId: 0
   cipher: auto
   udp: true
@@ -108,10 +28,74 @@ proxies:
   servername: zoomgov.dstb.my.id
   network: ws
   ws-opts:
-    path: /vless-ws
+    path: /vmess-ws
     headers:
       Host: id2.dstb.my.id
-- name: AVlessNS2_TLS_XCV_CDN
+- name: A_VmsNS2_TLS_XCV_SNI
+  type: vmess
+  server: id2.dstb.my.id
+  port: 443
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: A_VmsNS2_TLS_VIDIO_SNI
+  type: vmess
+  server: id2.dstb.my.id
+  port: 443
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: quiz.int.vidio.com
+- name: A_VmsNS2_NTLS_XCV_SNI
+  type: vmess
+  server: id2.dstb.my.id
+  port: 80
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: A_VmsNS2_NTLS_VIDIO_SNI
+  type: vmess
+  server: id2.dstb.my.id
+  port: 80
+  uuid: ae71aed1-9248-49b0-ac31-e28ff4058a8d
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: quiz.int.vidio.com
+- name: A_VlsNS2_TLS_XCV_CDN
   type: vless
   server: 104.17.3.81
   port: 443
@@ -127,7 +111,23 @@ proxies:
     path: /vless-ws
     headers:
       Host: id2.dstb.my.id
-- name: AVlessNS2_TLS_XCV_SNI
+- name: A_VlsNS2_TLS_XCV_WC
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 1c823364-d8a4-43ba-a773-e2289c9a3a92
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: zoomgov.dstb.my.id
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: id2.dstb.my.id
+- name: A_VlsNS2_TLS_XCV_SNI
   type: vless
   server: id2.dstb.my.id
   port: 443
@@ -143,15 +143,7 @@ proxies:
     path: /vless-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ATjTcpNS2_TLS_XCV_WC
-  type: trojan
-  server: support.zoom.us
-  port: 443
-  password: b00a8880-9e0b-4595-9894-76c011637d97
-  udp: true
-  sni: zoomgov.dstb.my.id
-  skip-cert-verify: true
-- name: ATjTcpNS2_TLS_XCV_CDN
+- name: A_TjTcpNS2_TLS_XCV_CDN
   type: trojan
   server: 104.17.3.81
   port: 443
@@ -159,7 +151,15 @@ proxies:
   udp: true
   sni: id2.dstb.my.id
   skip-cert-verify: true
-- name: ATjTcpNS2_TLS_XCV_SNI
+- name: A_TjTcpNS2_TLS_XCV_WC
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: b00a8880-9e0b-4595-9894-76c011637d97
+  udp: true
+  sni: zoomgov.dstb.my.id
+  skip-cert-verify: true
+- name: A_TjTcpNS2_TLS_XCV_SNI
   type: trojan
   server: id2.dstb.my.id
   port: 443
@@ -167,20 +167,7 @@ proxies:
   udp: true
   sni: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
   skip-cert-verify: true
-- name: ATjGoNS2_TLS_XCV_WC
-  server: support.zoom.us
-  port: 8443
-  type: trojan
-  password: svrnusa2_tjgo
-  network: ws
-  sni: zoomgov.dstb.my.id
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /trojan-go
-    headers:
-        Host: id2.dstb.my.id
-- name: ATjGoNS2_TLS_XCV_CDN
+- name: A_TjGoNS2_TLS_XCV_CDN
   server: 104.17.3.81
   port: 8443
   type: trojan
@@ -193,7 +180,20 @@ proxies:
     path: /trojan-go
     headers:
         Host: id2.dstb.my.id
-- name: ATjGoNS2_TLS_XCV_SNI
+- name: A_TjGoNS2_TLS_XCV_WC
+  server: support.zoom.us
+  port: 8443
+  type: trojan
+  password: svrnusa2_tjgo
+  network: ws
+  sni: zoomgov.dstb.my.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-go
+    headers:
+        Host: id2.dstb.my.id
+- name: A_TjGoNS2_TLS_XCV_SNI
   server: id2.dstb.my.id
   port: 8443
   type: trojan
@@ -206,7 +206,7 @@ proxies:
     path: /trojan-go
     headers:
         Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ATrojanNS2_TLS_XCV_CDN1
+- name: A_TjNS2_TLS_XCV_CDN1
   type: trojan
   server: 104.17.3.81
   port: 443
@@ -219,7 +219,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCV_CDN2
+- name: A_TjNS2_TLS_XCV_CDN2
   type: trojan
   server: 172.67.73.39
   port: 443
@@ -232,7 +232,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCV_WC
+- name: A_TjNS2_TLS_XCV_WC
   type: trojan
   server: support.zoom.us
   port: 443
@@ -245,7 +245,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCV_SNI
+- name: A_TjNS2_TLS_XCV_SNI
   type: trojan
   server: id2.dstb.my.id
   port: 443
@@ -258,7 +258,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ATrojanNS2_TLS_VIU_CDN1
+- name: A_TjNS2_TLS_VIU_CDN1
   type: trojan
   server: zaintest.vuclip.com
   port: 443
@@ -271,7 +271,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIU_CDN2
+- name: A_TjNS2_TLS_VIU_CDN2
   type: trojan
   server: help.viu.com
   port: 443
@@ -284,7 +284,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIDIO_WS1
+- name: A_TjNS2_TLS_VIDIO_WC1
   type: trojan
   server: quiz.int.vidio.com
   port: 443
@@ -297,7 +297,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIDIO_WS2
+- name: A_TjNS2_TLS_VIDIO_WC2
   type: trojan
   server: quiz.vidio.com
   port: 443
@@ -310,7 +310,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIDIO_IP1
+- name: A_TjNS2_TLS_VIDIO_IP1
   type: trojan
   server: 172.67.5.14
   port: 443
@@ -323,7 +323,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIDIO_IP2
+- name: A_TjNS2_TLS_VIDIO_IP2
   type: trojan
   server: 104.22.5.240
   port: 443
@@ -336,7 +336,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIDIO_IP3
+- name: A_TjNS2_TLS_VIDIO_IP3
   type: trojan
   server: 104.22.4.240
   port: 443
@@ -349,7 +349,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIDIO_H1
+- name: A_TjNS2_TLS_VIDIO_H1
   type: trojan
   server: quiz.vidio.com
   port: 443
@@ -362,7 +362,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIDIO_H2
+- name: A_TjNS2_TLS_VIDIO_H2
   type: trojan
   server: quiz.int.vidio.com
   port: 443
@@ -375,7 +375,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_VIDIO_H3
+- name: A_TjNS2_TLS_VIDIO_H3
   type: trojan
   server: quiz.staging.vidio.com
   port: 443
@@ -388,7 +388,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_ZOOM_H1
+- name: A_TjNS2_TLS_ZOOM_H1
   type: trojan
   server: gomarketplacefront-cf.zoom.us
   port: 443
@@ -401,7 +401,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_ZOOM_H2
+- name: A_TjNS2_TLS_ZOOM_H2
   type: trojan
   server: marketplacefront-cf.zoom.us
   port: 443
@@ -414,7 +414,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_ZOOM_H3
+- name: A_TjNS2_TLS_ZOOM_H3
   type: trojan
   server: gomarketplacecontent-cf.zoom.us
   port: 443
@@ -427,7 +427,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_GameFF_H1
+- name: A_TjNS2_TLS_GameFF_H1
   type: trojan
   server: ava.game.naver.com
   port: 443
@@ -440,7 +440,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_GameFF_H2
+- name: A_TjNS2_TLS_GameFF_H2
   type: trojan
   server: df.game.naver.com
   port: 443
@@ -453,7 +453,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_GameFF_H3
+- name: A_TjNS2_TLS_GameFF_H3
   type: trojan
   server: care.pmang.game.naver.com
   port: 443
@@ -466,7 +466,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_GameFF_H4
+- name: A_TjNS2_TLS_GameFF_H4
   type: trojan
   server: account.pmang.game.naver.com
   port: 443
@@ -479,7 +479,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_Gopay_H1
+- name: A_TjNS2_TLS_Gopay_H1
   type: trojan
   server: app-stg.gopay.co.id
   port: 443
@@ -492,7 +492,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id	  
-- name: ATrojanNS2_TLS_XCL_IP1
+- name: A_TjNS2_TLS_XCL_IP1
   type: trojan
   server: 104.16.125.59
   port: 443
@@ -505,7 +505,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCL_IP2
+- name: A_TjNS2_TLS_XCL_IP2
   type: trojan
   server: 104.16.126.59
   port: 443
@@ -518,7 +518,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCL_IP3
+- name: A_TjNS2_TLS_XCL_IP3
   type: trojan
   server: 104.18.214.235
   port: 443
@@ -531,7 +531,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCL_IP4
+- name: A_TjNS2_TLS_XCL_IP4
   type: trojan
   server: 104.18.213.235
   port: 443
@@ -544,7 +544,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCL_IP5
+- name: A_TjNS2_TLS_XCL_IP5
   type: trojan
   server: 162.159.140.158
   port: 443
@@ -557,7 +557,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCL_IP6
+- name: A_TjNS2_TLS_XCL_IP6
   type: trojan
   server: 104.18.3.96
   port: 443
@@ -570,7 +570,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_XCL_IP7
+- name: A_TjNS2_TLS_XCL_IP7
   type: trojan
   server: 104.18.2.96
   port: 443
@@ -583,7 +583,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: ATrojanNS2_TLS_Opok50Mb_H1
+- name: A_TjNS2_TLS_Opok50Mb_H1
   type: trojan
   server: pay.ovo.id
   port: 443
@@ -596,23 +596,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id2.dstb.my.id
-- name: AVmessNS1_TLS_XCV_WC
-  type: vmess
-  server: support.zoom.us
-  port: 443
-  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: zoomgov.dstb.my.id
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: id1.dstb.my.id
-- name: AVmessNS1_TLS_XCV_CDN
+- name: A_VmsNS1_TLS_XCV_CDN
   type: vmess
   server: 104.17.3.81
   port: 443
@@ -628,75 +612,11 @@ proxies:
     path: /vmess-ws
     headers:
       Host: id1.dstb.my.id
-- name: AVmessNS1_TLS_XCV_SNI
+- name: A_VmsNS1_TLS_XCV_WC
   type: vmess
-  server: id1.dstb.my.id
-  port: 443
-  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: AVmessNS1_TLS_VIDIO_SNI
-  type: vmess
-  server: id1.dstb.my.id
-  port: 443
-  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: quiz.int.vidio.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: quiz.int.vidio.com
-- name: AVmessNS1_NTLS_XCV_SNI
-  type: vmess
-  server: id1.dstb.my.id
-  port: 80
-  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: false
-  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: AVmessNS1_NTLS_VIDIO_SNI
-  type: vmess
-  server: id1.dstb.my.id
-  port: 80
-  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: false
-  servername: quiz.int.vidio.com
-  network: ws
-  ws-opts:
-    path: /vmess-ws
-    headers:
-      Host: quiz.int.vidio.com
-- name: AVlessNS1_TLS_XCV_WC
-  type: vless
   server: support.zoom.us
   port: 443
-  uuid: 8fba8427-765a-4a11-836f-247afdd1f266
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
   alterId: 0
   cipher: auto
   udp: true
@@ -705,10 +625,74 @@ proxies:
   servername: zoomgov.dstb.my.id
   network: ws
   ws-opts:
-    path: /vless-ws
+    path: /vmess-ws
     headers:
       Host: id1.dstb.my.id
-- name: AVlessNS1_TLS_XCV_CDN
+- name: A_VmsNS1_TLS_XCV_SNI
+  type: vmess
+  server: id1.dstb.my.id
+  port: 443
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: A_VmsNS1_TLS_VIDIO_SNI
+  type: vmess
+  server: id1.dstb.my.id
+  port: 443
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: quiz.int.vidio.com
+- name: A_VmsNS1_NTLS_XCV_SNI
+  type: vmess
+  server: id1.dstb.my.id
+  port: 80
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: A_VmsNS1_NTLS_VIDIO_SNI
+  type: vmess
+  server: id1.dstb.my.id
+  port: 80
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: quiz.int.vidio.com
+  network: ws
+  ws-opts:
+    path: /vmess-ws
+    headers:
+      Host: quiz.int.vidio.com
+- name: A_VlsNS1_TLS_XCV_CDN
   type: vless
   server: 104.17.3.81
   port: 443
@@ -724,7 +708,23 @@ proxies:
     path: /vless-ws
     headers:
       Host: id1.dstb.my.id
-- name: AVlessNS1_TLS_XCV_SNI
+- name: A_VlsNS1_TLS_XCV_WC
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 8fba8427-765a-4a11-836f-247afdd1f266
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: zoomgov.dstb.my.id
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: id1.dstb.my.id
+- name: A_VlsNS1_TLS_XCV_SNI
   type: vless
   server: id1.dstb.my.id
   port: 443
@@ -740,15 +740,7 @@ proxies:
     path: /vless-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ATjTcpNS1_TLS_XCV_WC
-  type: trojan
-  server: support.zoom.us
-  port: 443
-  password: 92a69f65-61ab-4950-94ba-56f1f58ab8b6
-  udp: true
-  sni: zoomgov.dstb.my.id
-  skip-cert-verify: true
-- name: ATjTcpNS1_TLS_XCV_CDN
+- name: A_TjTcpNS1_TLS_XCV_CDN
   type: trojan
   server: 104.17.3.81
   port: 443
@@ -756,7 +748,15 @@ proxies:
   udp: true
   sni: id1.dstb.my.id
   skip-cert-verify: true
-- name: ATjTcpNS1_TLS_XCV_SNI
+- name: A_TjTcpNS1_TLS_XCV_WC
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 92a69f65-61ab-4950-94ba-56f1f58ab8b6
+  udp: true
+  sni: zoomgov.dstb.my.id
+  skip-cert-verify: true
+- name: A_TjTcpNS1_TLS_XCV_SNI
   type: trojan
   server: id1.dstb.my.id
   port: 443
@@ -764,20 +764,7 @@ proxies:
   udp: true
   sni: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
   skip-cert-verify: true
-- name: ATjGoNS1_TLS_XCV_WC
-  server: support.zoom.us
-  port: 8443
-  type: trojan
-  password: svrnusa1_tjgo
-  network: ws
-  sni: zoomgov.dstb.my.id
-  skip-cert-verify: true
-  udp: true
-  ws-opts:
-    path: /trojan-go
-    headers:
-        Host: id1.dstb.my.id
-- name: ATjGoNS1_TLS_XCV_CDN
+- name: A_TjGoNS1_TLS_XCV_CDN
   server: 104.17.3.81
   port: 8443
   type: trojan
@@ -790,7 +777,20 @@ proxies:
     path: /trojan-go
     headers:
         Host: id1.dstb.my.id
-- name: ATjGoNS1_TLS_XCV_SNI
+- name: A_TjGoNS1_TLS_XCV_WC
+  server: support.zoom.us
+  port: 8443
+  type: trojan
+  password: svrnusa1_tjgo
+  network: ws
+  sni: zoomgov.dstb.my.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan-go
+    headers:
+        Host: id1.dstb.my.id
+- name: A_TjGoNS1_TLS_XCV_SNI
   server: id1.dstb.my.id
   port: 8443
   type: trojan
@@ -803,7 +803,7 @@ proxies:
     path: /trojan-go
     headers:
         Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ATrojanNS1_TLS_XCV_CDN1
+- name: A_TjNS1_TLS_XCV_CDN1
   type: trojan
   server: 104.17.3.81
   port: 443
@@ -816,7 +816,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCV_CDN2
+- name: A_TjNS1_TLS_XCV_CDN2
   type: trojan
   server: 172.67.73.39
   port: 443
@@ -829,7 +829,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCV_WC
+- name: A_TjNS1_TLS_XCV_WC
   type: trojan
   server: support.zoom.us
   port: 443
@@ -842,7 +842,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCV_SNI
+- name: A_TjNS1_TLS_XCV_SNI
   type: trojan
   server: id1.dstb.my.id
   port: 443
@@ -855,7 +855,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: ATrojanNS1_TLS_VIU_CDN1
+- name: A_TjNS1_TLS_VIU_CDN1
   type: trojan
   server: zaintest.vuclip.com
   port: 443
@@ -868,7 +868,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIU_CDN2
+- name: A_TjNS1_TLS_VIU_CDN2
   type: trojan
   server: help.viu.com
   port: 443
@@ -881,7 +881,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIDIO_WS1
+- name: A_TjNS1_TLS_VIDIO_WC1
   type: trojan
   server: quiz.int.vidio.com
   port: 443
@@ -894,7 +894,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIDIO_WS2
+- name: A_TjNS1_TLS_VIDIO_WC2
   type: trojan
   server: quiz.vidio.com
   port: 443
@@ -907,7 +907,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIDIO_IP1
+- name: A_TjNS1_TLS_VIDIO_IP1
   type: trojan
   server: 172.67.5.14
   port: 443
@@ -920,7 +920,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIDIO_IP2
+- name: A_TjNS1_TLS_VIDIO_IP2
   type: trojan
   server: 104.22.5.240
   port: 443
@@ -933,7 +933,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIDIO_IP3
+- name: A_TjNS1_TLS_VIDIO_IP3
   type: trojan
   server: 104.22.4.240
   port: 443
@@ -946,7 +946,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIDIO_H1
+- name: A_TjNS1_TLS_VIDIO_H1
   type: trojan
   server: quiz.vidio.com
   port: 443
@@ -959,7 +959,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIDIO_H2
+- name: A_TjNS1_TLS_VIDIO_H2
   type: trojan
   server: quiz.int.vidio.com
   port: 443
@@ -972,7 +972,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_VIDIO_H3
+- name: A_TjNS1_TLS_VIDIO_H3
   type: trojan
   server: quiz.staging.vidio.com
   port: 443
@@ -985,7 +985,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_ZOOM_H1
+- name: A_TjNS1_TLS_ZOOM_H1
   type: trojan
   server: gomarketplacefront-cf.zoom.us
   port: 443
@@ -998,7 +998,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_ZOOM_H2
+- name: A_TjNS1_TLS_ZOOM_H2
   type: trojan
   server: marketplacefront-cf.zoom.us
   port: 443
@@ -1011,7 +1011,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_ZOOM_H3
+- name: A_TjNS1_TLS_ZOOM_H3
   type: trojan
   server: gomarketplacecontent-cf.zoom.us
   port: 443
@@ -1024,7 +1024,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_GameFF_H1
+- name: A_TjNS1_TLS_GameFF_H1
   type: trojan
   server: ava.game.naver.com
   port: 443
@@ -1037,7 +1037,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_GameFF_H2
+- name: A_TjNS1_TLS_GameFF_H2
   type: trojan
   server: df.game.naver.com
   port: 443
@@ -1050,7 +1050,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_GameFF_H3
+- name: A_TjNS1_TLS_GameFF_H3
   type: trojan
   server: care.pmang.game.naver.com
   port: 443
@@ -1063,7 +1063,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_GameFF_H4
+- name: A_TjNS1_TLS_GameFF_H4
   type: trojan
   server: account.pmang.game.naver.com
   port: 443
@@ -1076,7 +1076,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_Gopay_H1
+- name: A_TjNS1_TLS_Gopay_H1
   type: trojan
   server: app-stg.gopay.co.id
   port: 443
@@ -1089,7 +1089,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id	  
-- name: ATrojanNS1_TLS_XCL_IP1
+- name: A_TjNS1_TLS_XCL_IP1
   type: trojan
   server: 104.16.125.59
   port: 443
@@ -1102,7 +1102,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCL_IP2
+- name: A_TjNS1_TLS_XCL_IP2
   type: trojan
   server: 104.16.126.59
   port: 443
@@ -1115,7 +1115,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCL_IP3
+- name: A_TjNS1_TLS_XCL_IP3
   type: trojan
   server: 104.18.214.235
   port: 443
@@ -1128,7 +1128,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCL_IP4
+- name: A_TjNS1_TLS_XCL_IP4
   type: trojan
   server: 104.18.213.235
   port: 443
@@ -1141,7 +1141,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCL_IP5
+- name: A_TjNS1_TLS_XCL_IP5
   type: trojan
   server: 162.159.140.158
   port: 443
@@ -1154,7 +1154,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCL_IP6
+- name: A_TjNS1_TLS_XCL_IP6
   type: trojan
   server: 104.18.3.96
   port: 443
@@ -1167,7 +1167,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_XCL_IP7
+- name: A_TjNS1_TLS_XCL_IP7
   type: trojan
   server: 104.18.2.96
   port: 443
@@ -1180,7 +1180,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: ATrojanNS1_TLS_Opok50Mb_H1
+- name: A_TjNS1_TLS_Opok50Mb_H1
   type: trojan
   server: pay.ovo.id
   port: 443
@@ -1193,7 +1193,7 @@ proxies:
     path: /trojan-ws
     headers:
       Host: id1.dstb.my.id
-- name: AVmessDo1_TLS_XCV_CDN
+- name: A_VmsDo1_TLS_XCV_CDN
   type: vmess
   server: 104.17.3.81
   port: 443
@@ -1209,7 +1209,7 @@ proxies:
     path: /vmess
     headers:
       Host: sg1.dstb.my.id
-- name: AVmessDo1_TLS_XCV_WC
+- name: A_VmsDo1_TLS_XCV_WC
   type: vmess
   server: support.zoom.us
   port: 443
@@ -1225,7 +1225,7 @@ proxies:
     path: /vmess
     headers:
       Host: sg1.dstb.my.id
-- name: AVmessDo1_TLS_XCV_SNI
+- name: A_VmsDo1_TLS_XCV_SNI
   type: vmess
   server: sg1.dstb.my.id
   port: 443
@@ -1241,7 +1241,7 @@ proxies:
     path: /vmess
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: AVmessDo1_TLS_VIDIO_SNI
+- name: A_VmsDo1_TLS_VIDIO_SNI
   type: vmess
   server: sg1.dstb.my.id
   port: 443
@@ -1257,7 +1257,7 @@ proxies:
     path: /vmess
     headers:
       Host: quiz.int.vidio.com
-- name: AVmessDo1_NTLS_XCV_SNI
+- name: A_VmsDo1_NTLS_XCV_SNI
   type: vmess
   server: sg1.dstb.my.id
   port: 80
@@ -1273,7 +1273,7 @@ proxies:
     path: /vmess
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: AVmessDo1_NTLS_VIDIO_SNI
+- name: A_VmsDo1_NTLS_VIDIO_SNI
   type: vmess
   server: sg1.dstb.my.id
   port: 80
@@ -1289,7 +1289,7 @@ proxies:
     path: /vmess
     headers:
       Host: quiz.int.vidio.com
-- name: ATrojanDO1_TLS_XCV_CDN1
+- name: A_TjDO1_TLS_XCV_CDN1
   type: trojan
   server: 104.17.3.81
   port: 443
@@ -1302,7 +1302,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCV_CDN1
+- name: A_TjDO1_TLS_XCV_CDN1
   type: trojan
   server: 172.67.73.39
   port: 443
@@ -1315,7 +1315,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCV_WC1
+- name: A_TjDO1_TLS_XCV_WC1
   type: trojan
   server: support.zoom.us
   port: 443
@@ -1328,7 +1328,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCV_WC2
+- name: A_TjDO1_TLS_XCV_WC2
   type: trojan
   server: support.zoom.us
   port: 443
@@ -1341,7 +1341,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCV_SNI
+- name: A_TjDO1_TLS_XCV_SNI
   type: trojan
   server: sg1.dstb.my.id
   port: 443
@@ -1396,7 +1396,7 @@ proxies:
     path: "/aryo"
     headers:
       Host: quiz.int.vidio.com.aryobrokolly.my.id
-- name: ATrojanDO1_TLS_VIU_WC1
+- name: A_TjDO1_TLS_VIU_WC1
   type: trojan
   server: help.viu.com
   port: 443
@@ -1409,7 +1409,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIU_WC1
+- name: A_TjDO1_TLS_VIU_WC1
   type: trojan
   server: zaintest.vuclip.com
   port: 443
@@ -1422,7 +1422,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIDIO_WC1
+- name: A_TjDO1_TLS_VIDIO_WC1
   type: trojan
   server: quiz.int.vidio.com
   port: 443
@@ -1435,7 +1435,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIDIO_WC2
+- name: A_TjDO1_TLS_VIDIO_WC2
   type: trojan
   server: quiz.vidio.com
   port: 443
@@ -1448,7 +1448,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIDIO_IP1
+- name: A_TjDO1_TLS_VIDIO_IP1
   type: trojan
   server: 172.67.5.14
   port: 443
@@ -1461,7 +1461,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIDIO_IP2
+- name: A_TjDO1_TLS_VIDIO_IP2
   type: trojan
   server: 104.22.5.240
   port: 443
@@ -1474,7 +1474,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIDIO_IP3
+- name: A_TjDO1_TLS_VIDIO_IP3
   type: trojan
   server: 104.22.4.240
   port: 443
@@ -1487,7 +1487,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIDIO_H1
+- name: A_TjDO1_TLS_VIDIO_H1
   type: trojan
   server: quiz.vidio.com
   port: 443
@@ -1500,7 +1500,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIDIO_H2
+- name: A_TjDO1_TLS_VIDIO_H2
   type: trojan
   server: quiz.int.vidio.com
   port: 443
@@ -1513,7 +1513,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_VIDIO_H3
+- name: A_TjDO1_TLS_VIDIO_H3
   type: trojan
   server: quiz.staging.vidio.com
   port: 443
@@ -1526,7 +1526,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_ZOOM_H1
+- name: A_TjDO1_TLS_ZOOM_H1
   type: trojan
   server: gomarketplacefront-cf.zoom.us
   port: 443
@@ -1539,7 +1539,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_ZOOM_H2
+- name: A_TjDO1_TLS_ZOOM_H2
   type: trojan
   server: marketplacefront-cf.zoom.us
   port: 443
@@ -1552,7 +1552,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_ZOOM_H3
+- name: A_TjDO1_TLS_ZOOM_H3
   type: trojan
   server: gomarketplacecontent-cf.zoom.us
   port: 443
@@ -1565,7 +1565,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_GameFF_H1
+- name: A_TjDO1_TLS_GameFF_H1
   type: trojan
   server: ava.game.naver.com
   port: 443
@@ -1578,7 +1578,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_GameFF_H2
+- name: A_TjDO1_TLS_GameFF_H2
   type: trojan
   server: df.game.naver.com
   port: 443
@@ -1591,7 +1591,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_GameFF_H3
+- name: A_TjDO1_TLS_GameFF_H3
   type: trojan
   server: care.pmang.game.naver.com
   port: 443
@@ -1604,7 +1604,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_GameFF_H4
+- name: A_TjDO1_TLS_GameFF_H4
   type: trojan
   server: account.pmang.game.naver.com
   port: 443
@@ -1617,7 +1617,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_Gopay_H1
+- name: A_TjDO1_TLS_Gopay_H1
   type: trojan
   server: app-stg.gopay.co.id
   port: 443
@@ -1630,7 +1630,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id	  
-- name: ATrojanDO1_TLS_XCL_IP1
+- name: A_TjDO1_TLS_XCL_IP1
   type: trojan
   server: 104.16.125.59
   port: 443
@@ -1643,7 +1643,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCL_IP2
+- name: A_TjDO1_TLS_XCL_IP2
   type: trojan
   server: 104.16.126.59
   port: 443
@@ -1656,7 +1656,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCL_IP3
+- name: A_TjDO1_TLS_XCL_IP3
   type: trojan
   server: 104.18.214.235
   port: 443
@@ -1669,7 +1669,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCL_IP4
+- name: A_TjDO1_TLS_XCL_IP4
   type: trojan
   server: 104.18.213.235
   port: 443
@@ -1682,7 +1682,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCL_IP5
+- name: A_TjDO1_TLS_XCL_IP5
   type: trojan
   server: 162.159.140.158
   port: 443
@@ -1695,7 +1695,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCL_IP6
+- name: A_TjDO1_TLS_XCL_IP6
   type: trojan
   server: 104.18.3.96
   port: 443
@@ -1708,7 +1708,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_XCL_IP7
+- name: A_TjDO1_TLS_XCL_IP7
   type: trojan
   server: 104.18.2.96
   port: 443
@@ -1721,7 +1721,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ATrojanDO1_TLS_Opok50Mb_H1
+- name: A_TjDO1_TLS_Opok50Mb_H1
   type: trojan
   server: pay.ovo.id
   port: 443
@@ -1734,7 +1734,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: ADstbDO1_TJ-XCV-CDN
+- name: A_DstbDO1_TJ-XCV-CDN
   type: trojan
   server: 104.17.3.81
   port: 443
