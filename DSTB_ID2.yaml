@@ -1302,7 +1302,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.my.id
-- name: A_TjDO1_TLS_XCV_CDN1
+- name: A_TjDO1_TLS_XCV_CDN2
   type: trojan
   server: 172.67.73.39
   port: 443
