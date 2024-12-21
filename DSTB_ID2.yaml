@@ -143,22 +143,6 @@ proxies:
     path: /vless-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: A_TjTcpNS2_TLS_XCV_CDN
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: b00a8880-9e0b-4595-9894-76c011637d97
-  udp: true
-  sni: id2.dstb.my.id
-  skip-cert-verify: true
-- name: A_TjTcpNS2_TLS_XCV_WC
-  type: trojan
-  server: support.zoom.us
-  port: 443
-  password: b00a8880-9e0b-4595-9894-76c011637d97
-  udp: true
-  sni: zoomgov.dstb.my.id
-  skip-cert-verify: true
 - name: A_TjTcpNS2_TLS_XCV_SNI
   type: trojan
   server: id2.dstb.my.id
@@ -740,22 +724,6 @@ proxies:
     path: /vless-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: A_TjTcpNS1_TLS_XCV_CDN
-  type: trojan
-  server: 104.17.3.81
-  port: 443
-  password: 92a69f65-61ab-4950-94ba-56f1f58ab8b6
-  udp: true
-  sni: id1.dstb.my.id
-  skip-cert-verify: true
-- name: A_TjTcpNS1_TLS_XCV_WC
-  type: trojan
-  server: support.zoom.us
-  port: 443
-  password: 92a69f65-61ab-4950-94ba-56f1f58ab8b6
-  udp: true
-  sni: zoomgov.dstb.my.id
-  skip-cert-verify: true
 - name: A_TjTcpNS1_TLS_XCV_SNI
   type: trojan
   server: id1.dstb.my.id
@@ -1354,48 +1322,6 @@ proxies:
     path: /trojan
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: AVlessSG_Aryo_TLS_XCV_WC
-  type: vless
-  server: support.zoom.us
-  port: 443
-  uuid: a36bf8ae-076d-4be8-8f14-ed62b63d98c2
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: zoomgov.aryobrokolly.my.id
-  network: ws
-  ws-opts:
-    path: "/aryo"
-    headers:
-      Host: quiz.int.vidio.com.aryobrokolly.my.id
-- name: AVlessSG_Aryo_TLS_XCV_CDN
-  type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: a36bf8ae-076d-4be8-8f14-ed62b63d98c2
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: aryobrokolly.my.id
-  network: ws
-  ws-opts:
-    path: "/aryo"
-    headers:
-      Host: aryobrokolly.my.id
-- name: AVlessSG_Aryo_TLS_VID_WC
-  type: vless
-  server: quiz.int.vidio.com
-  port: 443
-  uuid: a36bf8ae-076d-4be8-8f14-ed62b63d98c2
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: quiz.int.vidio.com.aryobrokolly.my.id
-  network: ws
-  ws-opts:
-    path: "/aryo"
-    headers:
-      Host: quiz.int.vidio.com.aryobrokolly.my.id
 - name: A_TjDO1_TLS_VIU_WC1
   type: trojan
   server: help.viu.com
