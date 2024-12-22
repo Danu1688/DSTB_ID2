@@ -99,6 +99,19 @@ proxies:
     path: /vmess-ws
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
+- name: A_DstbDO1_TJ-XCV-CDN
+  type: trojan
+  server: 104.17.3.81
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
 - name: A_VmsNS2_TLS_VIDIO_SNI
   type: vmess
   server: id2.rumah1.cloud
@@ -1660,7 +1673,7 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.dstb.cloud
-- name: A_DstbDO1_TJ-XCV-CDN
+- name: A_DstbDO2_TJ-XCV-CDN
   type: trojan
   server: 104.17.3.81
   port: 443
