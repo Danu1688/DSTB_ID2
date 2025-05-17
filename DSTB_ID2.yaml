@@ -1869,179 +1869,179 @@ proxies:
     headers:
       Host: support.zoom.us.sg1.nathaya.web.id
 #============= TRIK SNI======================
-- name: SNI-INSTAGRAM
+- name: A_DstbID3_SNI-INSTAGRAM
   type: trojan
-  server: nusaid.lahh.my.id
+  server: id1.nathaya.web.id
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
   sni: graph.instagram.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
       Host: graph.instagram.com
-- name: SNI-INSTAGRAM2
+- name: A_DstbID3_SNI-INSTAGRAM2
   type: trojan
-  server: nusaid.lahh.my.id
+  server: id1.nathaya.web.id
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
   sni: live-upload.instagram.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
       Host: live-upload.instagram.com
-- name: SNI-INSTAGRAM3
+- name: A_DstbID3_SNI-INSTAGRAM3
   type: trojan
-  server: nusaid.lahh.my.id
+  server: id1.nathaya.web.id
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
   sni: z-p15.www.instagram.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
       Host: z-p15.www.instagram.com
-- name: SNI-FB
+- name: A_DstbID3_SNI-FB
   type: trojan
-  server: nusaid.lahh.my.id
+  server: id1.nathaya.web.id
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
   sni: status.fb.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
       Host: status.fb.com
-- name: SNI-FB
+- name: A_DstbID3_SNI-FB
   type: trojan
   server: investor.fb.com
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: nusaid.lahh.my.id
+  sni: id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
-      Host: nusaid.lahh.my.id
+      Host: id1.nathaya.web.id
 #============= TRIK Bolak balik ======================
-- name: Bolakbalik-Naver
+- name: A_DstbID3_Bolakbalik-Naver
   type: trojan
   server: plus-store.naver.com 
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: nusaid.lahh.my.id
+  sni: id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
-      Host: nusaid.lahh.my.id
-- name: Bolakbalik-Game-Naver
+      Host: id1.nathaya.web.id
+- name: A_DstbID3_Bolakbalik-Game-Naver
   type: trojan
   server: game.naver.com
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: nusaid.lahh.my.id
+  sni: id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
-      Host: nusaid.lahh.my.id
+      Host: id1.nathaya.web.id
 #============= TRIK WILDCARD ======================
-- name: WILDCARD
+- name: A_DstbID3_WILDCARD
   type: trojan
   server: ava.game.naver.com
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: ava.game.naver.com.nusaid.lahh.my.id
+  sni: ava.game.naver.com.id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
-      Host: ava.game.naver.com.nusaid.lahh.my.id
-- name: WILDCARD2
+      Host: ava.game.naver.com.id1.nathaya.web.id
+- name: A_DstbID3_WILDCARD2
   type: trojan
   server: sogood.linefriends.com
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: sogood.linefriends.com.nusaid.lahh.my.id
+  sni: sogood.linefriends.com.id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojanws
+    path: /trojan
     headers:
-      Host: sogood.linefriends.com.nusaid.lahh.my.id
-- name: vmesntls
+      Host: sogood.linefriends.com.id1.nathaya.web.id
+- name: A_VmsNS1_vmesntls
   type: vmess
   server: blog.clova.line.me 
-  port: 80
-  uuid: 01019548-b647-413d-b823-5184cdab680c
+  port: 443
+  uuid: 2ce41c1b-d366-4f99-9a26-8c2c6708e357
   alterId: 0
   cipher: auto
   udp: true
-  servername: nusaid.lahh.my.id
+  servername: id1.dstb.my.id
   skip-cert-verify: true
   tls: false
   network: ws
   ws-opts:
-    path: "/vmessws"
+    path: /vmess-ws
     headers:
-      Host: nusaid.lahh.my.id
+      Host: id1.dstb.my.id
 #=================================================
-- name: VlessPROXY-LIMITED
+- name: A_VlsNS1_VlessPROXY-LIMITED
   type: vless
   server: ava.game.naver.com
   port: 443
-  uuid: 79bdd1fb-02a1-4a5e-a40a-9ae6875afd99
+  uuid: 8fba8427-765a-4a11-836f-247afdd1f266
   udp: true
   skip-cert-verify: true
   tls: true
-  servername: ava.game.naver.com.vpn.aryoyoutube.my.id
+  servername: ava.game.naver.com.id1.dstb.my.id
   network: ws
   ws-opts:
-    path: /216.10.243.159-443
+    path: /vless-ws
     headers:
-      Host: ava.game.naver.com.vpn.aryoyoutube.my.id
-- name: TrojanPROXY-LIMITED
+      Host: ava.game.naver.com.id1.dstb.my.id
+- name: A_DstbID3_TrojanPROXY-LIMITED
   type: trojan
   server: ava.game.naver.com
   port: 443
-  password: 92a9242c-d7f8-40b3-9207-939b35b288e1
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: ava.game.naver.com.vpn.aryoyoutube.my.id
+  sni: ava.game.naver.com.id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /156.251.180.181-21698
+    path: /trojan
     headers:
-      Host: ava.game.naver.com.vpn.aryoyoutube.my.id
-- name: Membership-willdcard
+      Host: ava.game.naver.com.id1.nathaya.web.id
+- name: A_DstbID3_Membership-willdcard
   type: trojan
   server: ava.game.naver.com 
   port: 443
-  password: TdNeANtGaa6qyDUfaqImLw
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: ava.game.naver.com.wc.akuwibuu.web.id
+  sni: ava.game.naver.com.id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /nusaid.wc.lahh.my.id/trojanws
+    path: /id1.nathaya.web.id/trojan
     headers:
-      Host: ava.game.naver.com.wc.akuwibuu.web.id
+      Host: ava.game.naver.com.id1.nathaya.web.id
