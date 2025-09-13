@@ -96,7 +96,7 @@ proxies:
   port: 443
   password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: zoomgov.dstb.my.id
+  sni: zoomgov.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
@@ -109,7 +109,7 @@ proxies:
   port: 443
   password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: support.dstb.my.id
+  sni: support.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
@@ -169,7 +169,7 @@ proxies:
   port: 443
   password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: quiz.dstb.my.id
+  sni: quiz.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
@@ -182,7 +182,7 @@ proxies:
   port: 443
   password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: quiz.dstb.my.id
+  sni: quiz.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
