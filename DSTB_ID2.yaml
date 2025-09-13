@@ -129,11 +129,11 @@ proxies:
     path: /trojan
     headers:
       Host: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
-- name: A_TcpDstbID_TLS_XCV_SNI
+- name: A_DstbID1_TCP_XCV_SNI
   type: trojan
   server: id1.nathaya.web.id
   port: 443
-  password: 92a69f65-61ab-4950-94ba-56f1f58ab8b6
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
   sni: trouter2-azsc-uswe-3-a.trouter.teams.microsoft.com
   skip-cert-verify: true
