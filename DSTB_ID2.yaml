@@ -182,7 +182,7 @@ proxies:
     path: /trojan
     headers:
       Host: z-p15.www.instagram.com
-- name: A_DstbID1_SNI-FB
+- name: A_DstbID1_SNI-FB1
   type: trojan
   server: id1.nathaya.web.id
   port: 443
@@ -195,7 +195,7 @@ proxies:
     path: /trojan
     headers:
       Host: status.fb.com
-- name: A_DstbID1_SNI-FB
+- name: A_DstbID1_SNI-FB2
   type: trojan
   server: investor.fb.com
   port: 443
@@ -784,7 +784,7 @@ proxies:
     path: /trojan
     headers:
       Host: z-p15.www.instagram.com
-- name: A_DstbSG1_SNI-FB
+- name: A_DstbSG1_SNI-FB1
   type: trojan
   server: sg1.nathaya.web.id
   port: 443
@@ -797,7 +797,7 @@ proxies:
     path: /trojan
     headers:
       Host: status.fb.com
-- name: A_DstbSG1_SNI-FB
+- name: A_DstbSG1_SNI-FB2
   type: trojan
   server: investor.fb.com
   port: 443
