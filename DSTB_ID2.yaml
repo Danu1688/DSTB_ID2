@@ -31,12 +31,12 @@ proxies:
   type: trojan
   password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   skip-cert-verify: true
-  sni: ava.game.naver.com.sg1.nathaya.web.id
+  sni: ava.game.naver.com.id1.nathaya.web.id
   network: ws
   ws-opts:
     path: /trojan
     headers:
-      Host: ava.game.naver.com.sg1.nathaya.web.id
+      Host: ava.game.naver.com.id1.nathaya.web.id
   udp: true
 - name: A_DstbID1_TJ-XCV-WC1
   type: trojan
