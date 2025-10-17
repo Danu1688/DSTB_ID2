@@ -39,7 +39,7 @@ proxies:
       Host: ava.game.naver.com.id1.nathaya.web.id
   udp: true
 - name: A_DstbID1_TJ-BIZ-WC2
-  server: 104.18.213.235
+  server: 104.18.214.235
   port: 443
   type: trojan
   password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
