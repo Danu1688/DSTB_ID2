@@ -143,7 +143,7 @@ proxies:
     headers:
       Host: support.zoom.us.id1.nathaya.web.id
 #============= TRIK SNI======================
-- name: A_DstbID1_SNI-INSTAGRAM
+- name: A_DstbID1_SNI-INSTAGRAM1
   type: trojan
   server: id1.nathaya.web.id
   port: 443
@@ -745,7 +745,7 @@ proxies:
     headers:
       Host: support.zoom.us.sg1.nathaya.web.id
 #============= TRIK SNI======================
-- name: A_DstbSG1_SNI-INSTAGRAM
+- name: A_DstbSG1_SNI-INSTAGRAM1
   type: trojan
   server: sg1.nathaya.web.id
   port: 443
