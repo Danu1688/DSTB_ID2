@@ -1255,6 +1255,7 @@ proxies:
     path: /trojan
     headers:
       Host: id1.nathaya.web.id
+#============= TRIK VIDI WS BOLAK BALIK ======================
 - name: A_DstbSG1_TJ-Vidi-WS1
   type: trojan
   server: 104.18.1.196
@@ -1281,6 +1282,230 @@ proxies:
     path: /trojan
     headers:
       Host: sg1.nathaya.web.id
+#============= TRIK PROS SSL SNI ======================
+- name: A_DstbSG1_TJ-Pros-SSL1
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: chat.whatsapp.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: chat.whatsapp.com
+- name: A_DstbSG1_TJ-Pros-SSL2
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: v.whatsapp.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: v.whatsapp.net
+- name: A_DstbSG1_TJ-Pros-SSL3
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: web.whatsapp.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: web.whatsapp.com
+- name: A_DstbSG1_TJ-Pros-SSL4
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: media.fcgk35-1.fna.whatsapp.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: media.fcgk35-1.fna.whatsapp.com
+- name: A_DstbSG1_TJ-Pros-SSL5
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: media.fsub6-1.fna.whatsapp.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: media.fsub6-1.fna.whatsapp.com
+- name: A_DstbSG1_TJ-Pros-SSL6
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: media.sin6-3.cdn.whatsapp.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: media.sin6-3.cdn.whatsapp.com
+- name: A_DstbSG1_TJ-Pros-SSL7
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: www.freefiremobile.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: www.freefiremobile.com
+- name: A_DstbSG1_TJ-Pros-SSL8
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: www.garena.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: www.garena.com
+- name: A_DstbSG1_TJ-Pros-SSL9
+  type: trojan
+  server: sg1.nathaya.web.id
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: www.garena.co.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: www.garena.co.id
+#============= TRIK PROS WS BOLAK BALIK ======================
+- name: A_DstbSG1_TJ-Pros-WS1
+  type: trojan
+  server: dl.cvs.freefiremobile.com
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
+- name: A_DstbSG1_TJ-Pros-WS2
+  type: trojan
+  server: bcmsuporte.garena.com
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
+- name: A_DstbSG1_TJ-Pros-WS3
+  type: trojan
+  server: dfsuporte.garena.com
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
+- name: A_DstbSG1_TJ-Pros-WS4
+  type: trojan
+  server: ffsuporte.garena.com
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
+- name: A_DstbSG1_TJ-Pros-WS5
+  type: trojan
+  server: haikyusuporte.garena.com
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
+- name: A_DstbSG1_TJ-Pros-WS6
+  type: trojan
+  server: suporte.garena.com
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
+- name: A_DstbSG1_TJ-Pros-WS7
+  type: trojan
+  server: suportepagamentos.garena.com
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
+- name: A_DstbSG1_TJ-Pros-WS8
+  type: trojan
+  server: web.poe.garena.com
+  port: 443
+  password: ee9d10ff-da1d-4496-8f51-a3ef82aa758d
+  udp: true
+  sni: sg1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1.nathaya.web.id
+#============= TRIK XCV CDN BOLAK BALIK ======================
 - name: A_DstbSG1_TJ-XCV-CDN1
   type: trojan
   server: 104.17.3.81
