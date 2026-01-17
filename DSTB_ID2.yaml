@@ -144,7 +144,7 @@ proxies:
     path: /vmess
     headers:
       Host: sg7.nathaya.web.id
-	  
+
 #============= TRIK Bolak balik ======================
 - name: A_DstbID1_Bolakbalik-Naver
   type: trojan
@@ -159,7 +159,7 @@ proxies:
     path: /trojan
     headers:
       Host: id1.nathaya.web.id
-	  
+
 #============= TRIK OPOK ======================	  
 - name: A_DstbID1_TLS_Opok50Mb_H1
   type: trojan
