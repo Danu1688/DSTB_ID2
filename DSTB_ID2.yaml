@@ -8,7 +8,7 @@ proxies:
   udp: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
-  network: ws
+  network: WS/gRPC
   ws-opts:
     path: /whatever/trojan
     headers:
@@ -21,7 +21,7 @@ proxies:
   udp: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
-  network: ws
+  network: WS/gRPC
   ws-opts:
     path: /whatever/trojan
     headers:
@@ -34,7 +34,7 @@ proxies:
   udp: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
-  network: ws
+  network: WS/gRPC
   ws-opts:
     path: /whatever/trojan
     headers:
@@ -47,7 +47,7 @@ proxies:
   udp: true
   sni: zoomgov.nathaya.web.id
   skip-cert-verify: true
-  network: ws
+  network: WS/gRPC
   ws-opts:
     path: /whatever/trojan
     headers:
@@ -60,7 +60,7 @@ proxies:
   udp: true
   sni: support.nathaya.web.id
   skip-cert-verify: true
-  network: ws
+  network: WS/gRPC
   ws-opts:
     path: /whatever/trojan
     headers:
@@ -73,7 +73,7 @@ proxies:
   udp: true
   sni: support.zoom.us.id2.nathaya.web.id
   skip-cert-verify: true
-  network: ws
+  network: WS/gRPC
   ws-opts:
     path: /whatever/trojan
     headers:
@@ -86,7 +86,7 @@ proxies:
   udp: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
-  network: ws
+  network: WS/gRPC
   ws-opts:
     path: /whatever/trojan
     headers:
@@ -194,7 +194,7 @@ proxies:
   udp: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
-  network: ws
+  network: WS/gRPC
   ws-opts:
     path: /whatever/trojan
     headers:
