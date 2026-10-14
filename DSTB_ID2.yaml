@@ -10,7 +10,7 @@ proxies:
   skip-cert-verify: true
   network: WS
   ws-opts:
-    path: /whatever/trojan
+    path: /trojan
     headers:
       Host: id2.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-CDN2
@@ -23,7 +23,7 @@ proxies:
   skip-cert-verify: true
   network: WS
   ws-opts:
-    path: /whatever/trojan
+    path: /trojan
     headers:
       Host: id2.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-WS1
@@ -36,7 +36,7 @@ proxies:
   skip-cert-verify: true
   network: WS
   ws-opts:
-    path: /whatever/trojan
+    path: /trojan
     headers:
       Host: id2.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-WC1
@@ -49,7 +49,7 @@ proxies:
   skip-cert-verify: true
   network: WS
   ws-opts:
-    path: /whatever/trojan
+    path: /trojan
     headers:
       Host: id2.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-WC2
@@ -62,7 +62,7 @@ proxies:
   skip-cert-verify: true
   network: WS
   ws-opts:
-    path: /whatever/trojan
+    path: /trojan
     headers:
       Host: id2.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-WC3
@@ -75,7 +75,7 @@ proxies:
   skip-cert-verify: true
   network: WS
   ws-opts:
-    path: /whatever/trojan
+    path: /trojan
     headers:
       Host: support.zoom.us.id2.nathaya.web.id
 - name: A_DstbID1_TJ-WA-CDN1
@@ -88,7 +88,7 @@ proxies:
   skip-cert-verify: true
   network: WS
   ws-opts:
-    path: /whatever/trojan
+    path: /trojan
     headers:
       Host: id2.nathaya.web.id
 
@@ -196,7 +196,7 @@ proxies:
   skip-cert-verify: true
   network: WS
   ws-opts:
-    path: /whatever/trojan
+    path: /trojan
     headers:
       Host: id2.nathaya.web.id
 
