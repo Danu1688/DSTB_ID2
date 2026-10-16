@@ -1,96 +1,96 @@
 proxies:
 #============= TRIK EDU WS BOLAK BALIK ======================
 - name: A_DstbID1_TJ-EDU-CDN1
-  type: vmess
+  type: trojan
   server: 104.17.3.81
   port: 443
-  password: 4caf156a-3309-4105-8388-d388eb9e1105
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: id2.nathaya.web.id
+  sni: id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /whatever/vmess
+    path: /trojan
     headers:
-      Host: id2.nathaya.web.id
+      Host: id1.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-CDN2
-  type: vmess
+  type: trojan
   server: 172.67.73.39
   port: 443
-  password: 4caf156a-3309-4105-8388-d388eb9e1105
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: id2.nathaya.web.id
+  sni: id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /whatever/vmess
+    path: /trojan
     headers:
-      Host: id2.nathaya.web.id
+      Host: id1.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-WS1
-  type: vmess
+  type: trojan
   server: edu.ruangguru.com
   port: 443
-  password: 4caf156a-3309-4105-8388-d388eb9e1105
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: id2.nathaya.web.id
+  sni: id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /whatever/vmess
+    path: /trojan
     headers:
-      Host: id2.nathaya.web.id
+      Host: id1.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-WC1
-  type: vmess
+  type: trojan
   server: support.zoom.us
   port: 443
-  password: 4caf156a-3309-4105-8388-d388eb9e1105
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
   sni: zoomgov.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /whatever/vmess
+    path: /trojan
     headers:
-      Host: id2.nathaya.web.id
+      Host: id1.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-WC2
-  type: vmess
+  type: trojan
   server: support.zoom.us
   port: 443
-  password: 4caf156a-3309-4105-8388-d388eb9e1105
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
   sni: support.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /whatever/vmess
+    path: /trojan
     headers:
-      Host: id2.nathaya.web.id
+      Host: id1.nathaya.web.id
 - name: A_DstbID1_TJ-EDU-WC3
-  type: vmess
+  type: trojan
   server: support.zoom.us
   port: 443
-  password: 4caf156a-3309-4105-8388-d388eb9e1105
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: support.zoom.us.id2.nathaya.web.id
+  sni: support.zoom.us.id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /whatever/vmess
+    path: /trojan
     headers:
-      Host: support.zoom.us.id2.nathaya.web.id
+      Host: support.zoom.us.id1.nathaya.web.id
 - name: A_DstbID1_TJ-WA-CDN1
-  type: vmess
+  type: trojan
   server: 104.18.1.196
   port: 443
-  password: 4caf156a-3309-4105-8388-d388eb9e1105
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: id2.nathaya.web.id
+  sni: id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /whatever/vmess
+    path: /trojan
     headers:
-      Host: id2.nathaya.web.id
+      Host: id1.nathaya.web.id
 
 #============= TRIK EDU WS BOLAK BALIK ======================
 - name: A_DstbSG1_TJ-EDU-CDN1
@@ -187,18 +187,18 @@ proxies:
 
 #============= TRIK Bolak balik ======================
 - name: A_DstbID1_Bolakbalik-Naver
-  type: vmess
+  type: trojan
   server: plus-store.naver.com 
   port: 443
-  password: 4caf156a-3309-4105-8388-d388eb9e1105
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
-  sni: id2.nathaya.web.id
+  sni: id1.nathaya.web.id
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /whatever/vmess
+    path: /trojan
     headers:
-      Host: id2.nathaya.web.id
+      Host: id1.nathaya.web.id
 
 #============= TRIK Bolak balik ======================
 - name: A_DstbSG1_Bolakbalik-Naver
