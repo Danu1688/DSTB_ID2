@@ -6,9 +6,6 @@ proxies:
   port: 443
   password: 4caf156a-3309-4105-8388-d388eb9e1105
   udp: true
-  alterId: 0
-  cipher: auto
-  tls: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
   network: ws
@@ -22,9 +19,6 @@ proxies:
   port: 443
   password: 4caf156a-3309-4105-8388-d388eb9e1105
   udp: true
-  alterId: 0
-  cipher: auto
-  tls: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
   network: ws
@@ -38,9 +32,6 @@ proxies:
   port: 443
   password: 4caf156a-3309-4105-8388-d388eb9e1105
   udp: true
-  alterId: 0
-  cipher: auto
-  tls: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
   network: ws
@@ -54,9 +45,6 @@ proxies:
   port: 443
   password: 4caf156a-3309-4105-8388-d388eb9e1105
   udp: true
-  alterId: 0
-  cipher: auto
-  tls: true
   sni: zoomgov.nathaya.web.id
   skip-cert-verify: true
   network: ws
@@ -70,9 +58,6 @@ proxies:
   port: 443
   password: 4caf156a-3309-4105-8388-d388eb9e1105
   udp: true
-  alterId: 0
-  cipher: auto
-  tls: true
   sni: support.nathaya.web.id
   skip-cert-verify: true
   network: ws
@@ -86,9 +71,6 @@ proxies:
   port: 443
   password: 4caf156a-3309-4105-8388-d388eb9e1105
   udp: true
-  alterId: 0
-  cipher: auto
-  tls: true
   sni: support.zoom.us.id2.nathaya.web.id
   skip-cert-verify: true
   network: ws
@@ -102,9 +84,6 @@ proxies:
   port: 443
   password: 4caf156a-3309-4105-8388-d388eb9e1105
   udp: true
-  alterId: 0
-  cipher: auto
-  tls: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
   network: ws
@@ -213,9 +192,6 @@ proxies:
   port: 443
   password: 4caf156a-3309-4105-8388-d388eb9e1105
   udp: true
-  alterId: 0
-  cipher: auto
-  tls: true
   sni: id2.nathaya.web.id
   skip-cert-verify: true
   network: ws
