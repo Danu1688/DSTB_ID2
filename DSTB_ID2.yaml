@@ -1,4 +1,21 @@
 proxies:
+#============= TRIK EDU VMESS WS BOLAK BALIK ======================
+- name: A_DstbID1_VMS-EDU-CDN1
+  type: vmess
+  server: 104.17.3.81
+  port: 443
+  uuid: 4caf156a-3309-4105-8388-d388eb9e1105
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: id2.nathaya.web.id
+  network: ws
+  ws-opts:
+    path: /whatever/vmess
+    headers:
+      Host: id2.nathaya.web.id
 #============= TRIK EDU WS BOLAK BALIK ======================
 - name: A_DstbID1_TJ-EDU-CDN1
   type: trojan
